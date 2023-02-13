@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/* Todas as demais Midias*/
+
+/* Typical Device Breakpoints
+-----------------------------------
+	Pequenas Telas: 600px
+	Celular: 600px até 768px
+	Tablet:  769px até 992px
+	Desktop: 992px até 1200px
+	Grandes Telas: acima de 1200px
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+	font-family: 'font-titulo';
+	src: url('../fonts/white_dream/WhiteDreamPERSONALUSEONLY-Regular.otf');
+}
+
+@font-face {
+	font-family: 'work-medium';
+	src: url(../fonts/static/WorkSans-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'work-light-italic';
+	src: url('../fonts/static/WorkSans-LightItalic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+:root{
+	--font-titulo: 'font-titulo';
+	--font-work-medium: 'work-medium';
+	--font-work-light: 'work-light-italic';
+
+	--cor1: #262625;
+	--cor2: #1F3740;
+	--cor3: #84B4BF;
+	--cor4: #D0ECF2;
+	--cor5: #F2D3D0;
+}
+
+::-webkit-scrollbar{
+	width: 0px;
+	height: 0px;
+}
+
+
+/*TROQUEI O WIDTH DO BODY E DO ASIDE PARA AUTO SE FOR DEIXAR A BARRA DE ROLAGEM SE NAO FOR , DEVE MUDAR O BODY E ASIDE PARA 100VW*/
+body, html{
+	background: var(--cor3) url('../imagens/background-desktop.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center bottom;
+	width: auto;
+}
+
+
+
+main{
+	height: 100%;
+}
+
+nav{
+	padding: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav h1{
+	font-size: 1.3em;
+	font-family: var(--font-titulo);
+	color: white;
+	text-shadow: 3px 0px 1px rgba(0, 0, 0, 0.507);
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+
+nav h1:hover{
+	opacity: 0.6;
+	transition: 1s;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+nav a{
+	font-size: .8em;
+	font-weight: bold;
+	margin-right: 6px;
+
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: white;
+	text-shadow: 2px 0px 1px rgba(0, 0, 0, 0.692);
+	font-family: var(--font-work-medium);
+	font-weight: 300;
+}
+
+li a:hover{
+	opacity: 0.6;
+	transition: 1s;
+	padding-right: 7px;
+}
+
+main{
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.74);
+	width: 100%;
+	height: auto;
+}
+
+.painel{
+	margin-top: 5em;
+}
+
+.painel  h1{
+	color: white;
+	text-shadow: 2.5px 0px 0px rgb(0, 0, 0);
+	font-size: 1.7em;
+	text-align: center;
+	font-family: var(--font-work-medium);
+	font-style: italic;
+}
+
+.painel > p{
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	text-shadow: 2.5px 0px 0px black;
+	font-family: var(--font-work-light);
+}
+
+.container{
+	margin-top: 8em;
+	width: 100%;
+}
+
+.cont1{
+	background-color: white;
+	padding: 15px;
+}
+
+.cont1 h2{
+	text-align: center;
+}
+
+.cont1 p{
+	text-indent: 5px;
+	text-align: justify;
+	padding-bottom: 30px;
+	line-height: 1.5em;
+}
+
+.cont2 {
+	background-color: #ffff;
+}
+
+.cont2 p{
+	padding-top: 15px;
+	text-indent: 15px;
+	line-height: 1.5em;
+}
+
+
+
+.cards{
+	background-color: white;
+	width: 100%;
+	padding: 10px;
+}
+
+.card {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 250px;
+    background-color: white;
+    border-radius: 21px;
+    box-shadow: 20px 20px 50px -30px #3d43b3;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+
+.card-1 #img{
+	border-radius: 20px 20px 0px 0px;
+	background: url('../imagens/cards/card-1.jpg') no-repeat;
+	background-size: cover;
+	filter: brightness(80%);
+	
+	height: 150px;
+	width: 100%;
+}
+
+.card-2 #img{
+	border-radius: 20px 20px 0px 0px;
+	background: url('../imagens/cards/card-2.jpg') no-repeat;
+	background-size: cover;
+	filter: brightness(80%);
+	
+	height: 150px;
+	width: 100%;
+}
+
+.card-3 #img{
+	border-radius: 20px 20px 0px 0px;
+	background: url('../imagens/cards/card-3.jpg') no-repeat;
+	background-size: cover;
+	filter: brightness(80%);
+	
+	height: 150px;
+	width: 100%;
+}
+
+.card h3{
+	font-size: .9em;
+	font-weight: 300;
+	padding: 10px;
+	text-align: justify;
+}
+
+.card a{
+	display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+	text-shadow: 1px 0px 0px black;
+    background: linear-gradient(to right, #4f55d1, #9ab3ff);
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.card a:hover{
+	opacity: .9;
+	transition-duration: 3s;
+	padding-left: 20px;
+}
+
+aside{
+	background-color: #545ac2;
+	width: auto;
+	padding: 20px;
+}
+
+aside img{
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+
+aside p{
+	color: white;
+	font-family: var(--font-work-light);
+	text-indent: 15px;
+	text-align: justify;
+}
+
+
+footer{
+	width: 100%;
+	padding: 20px;
+
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	background-color: #3d43b3;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.603);
+	
+}
+
+footer h2{
+	font-family: var(--font-work-medium);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+footer ul{
+	list-style-type: none;
+	padding: 20px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+footer li{
+	padding: 5px;
+	font-family: var(--font-work-light);
+}
+
+footer input.email{
+	width: 100%;
+	border: 1px solid white;
+	background-color: #3d43b3;
+	padding: 5px;
+}
+
+footer input::placeholder{
+	color: white;
+	text-align: center;
+}
+
+footer input.submit{
+	width: 100%;
+	border: 1px solid white;
+	background-color: white;
+	padding: 5px;
+	font-family: var(--font-work-light);
+	font-weight: bold;
+	color: #3d43b3;
+	margin-top: 5px;
+}
+
+footer img{
+	width: 30px;
+	height: 30px;
+}
+
+.inscriçao h2{
+	text-align: center;
+}
+
+.inscriçao ul{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.inscriçao a{
+	padding: 5px;
+}
+
+.inscriçao .submit:hover{
+	color: white;
+	background-color: #3d43b3;
+	transition-duration: 1s;
+}

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px){
+	footer{
+		width: 100%;
+		padding: 20px;
+	
+		color: white;
+
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	
+		background-color: #3d43b3;
+	}
+
+	.inscriçao{
+		display: inline-block;
+		text-align: right;
+	}
+
+	.inscriçao h2{
+		text-align: center;
+	}
+
+	.inscriçao input.email{
+		width: 100%;
+	}
+
+	.inscriçao input.submit{
+		width: 100%;
+	}
+
+	.inscriçao ul{
+		padding: 0px;
+	}
+}
+
+@media screen and (min-width: 656px){
+	footer{
+		width: 100%;
+		padding: 40px;
+	
+		color: white;
+
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	
+		background-color: #3d43b3;
+	}
+
+	footer div{
+		width: 150px;
+		height: 250px;
+	}
+
+	footer ul{
+		align-items: flex-start;
+	}
+
+	.inscriçao h2{
+		margin-bottom: 10px;
+	}
+
+	.inscriçao ul{
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Todas as demais Midias*/
+
+/* Typical Device Breakpoints
+-----------------------------------
+	Pequenas Telas: 600px
+	Celular: 600px até 768px
+	Tablet:  769px até 992px
+	Desktop: 992px até 1200px
+	Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 450px){
+	main{
+		width: 50vw;
+	}
+}
+
+/*Pequenas Telas: 600px*/
+@media screen and (min-width: 600px) and (max-width: 768px){
+	main{
+		width: 45vw;
+		background-color: white;
+	
+		border-radius: 30px;
+		box-shadow: 0px 5px 9px black;
+	}
+}
+
+/*Tablet:  769px até 992px*/
+@media screen and (min-width: 769px) and (max-width: 992px){
+	main{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.imagem{
+		width: 70%;
+		height: 21.5em;
+		border-radius: 25px 0px 0px 25px;
+	}
+}
+
+
+/*Desktop: 992px até 1200px*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	main{
+		width: 50vw;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.imagem{
+		width: 50%;
+		height: 21.5em;
+		border-radius: 25px 0px 0px 25px;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	main{
+		width: 600px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.imagem{
+		width: 50%;
+		height: 21.5em;
+		border-radius: 25px 0px 0px 25px;
+	}
+}

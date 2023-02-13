@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quasar Team</title>
+	<link rel="stylesheet" href="estilos/Login-MobileFirst.css">
+	<link rel="stylesheet" href="estilos/Login-MediaQuery.css">
+
+	<link rel="shortcut icon" href="../imagens/Icon.png" type="image/x-icon">
+</head>
+<body>
+	<main>
+
+		<div class="imagem">
+		</div>
+
+		<div class="form">
+			<h2>Login</h2>
+			<p>seja bem-vindo(a). Faça login para acessar sua conta</p>
+		
+
+				<form action="Login.php" method="post" autocomplete="on">
+
+				<div class="form-card">
+
+					<label for="Iemail"><img src="../PagLogReg/imagens/email.png" alt=""></label>
+
+					<input type="email" name="email" id="Iemail" class="login"
+					placeholder="Seu email" required  minlength="7" autocomplete="email">
+
+				</div>
+
+				<div class="form-card">
+					<label for="Isenha"><img src="../PagLogReg/imagens/senha.png" alt=""></label>
+
+					<input type="password" name="Senha" id="Isenha" class="login" required placeholder="Sua senha" minlength="4" maxlength="15" autocomplete="current-password">
+				</div>
+
+				<input type="submit" value="Enviar" id="Enviar">
+				<input type="reset" value="Esqueci minha senha" id="esqueci">
+
+				</form>
+
+				<div class="Voltar">
+					<a href="../index.html">
+						<img src="imagens/voltar.png" alt="">
+					</a>
+				</div>
+		</div>
+	</main>
+</body>
+</html>
